@@ -1,0 +1,419 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+/* NAVBAR */
+
+header {
+    background: #111;
+    padding: 20px 7%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 27px;
+    color: white;
+}
+
+.logo span {
+    color: #d6a84f;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.navbar ul a:hover {
+    color: #d6a84f;
+}
+
+.nav-btn,
+.main-btn {
+    background: #d6a84f;
+    color: #111 !important;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background:
+    linear-gradient(90deg, #000 10%, rgba(0,0,0,.65), transparent),
+    url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=85");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.tagline,
+.small-title {
+    color: #d6a84f;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #d6a84f;
+}
+
+.hero-content p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* ABOUT */
+
+.about {
+    text-align: center;
+    padding: 80px 10%;
+    background: #151515;
+}
+
+.about h2,
+.cars-section h2,
+.features h2,
+.comparison h2,
+.testdrive h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about > p:last-child {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    color: #bbb;
+}
+
+/* CAR COLLECTION */
+
+.cars-section {
+    padding: 80px 7%;
+    text-align: center;
+}
+
+.car-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.car-card {
+    background: #181818;
+    border: 1px solid #333;
+    text-align: left;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.car-card:hover {
+    transform: translateY(-8px);
+    border-color: #d6a84f;
+}
+
+.car-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    background: #222;
+}
+
+.car-info {
+    padding: 25px;
+}
+
+.color-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 7px 12px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.white-label {
+    background: #fff;
+    color: #111;
+}
+
+.black-label {
+    background: #333;
+    color: #fff;
+    border: 1px solid #777;
+}
+
+.car-info h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.car-info p {
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.specs span {
+    background: #292929;
+    padding: 8px 10px;
+    font-size: 12px;
+}
+
+.car-info h4 {
+    color: #d6a84f;
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    display: inline-block;
+    background: #d6a84f;
+    color: #111;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FEATURES */
+
+.features {
+    padding: 80px 7%;
+    text-align: center;
+    background: #151515;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.feature-box {
+    padding: 30px 20px;
+    background: #222;
+    border-bottom: 3px solid #d6a84f;
+}
+
+.feature-box h3 {
+    color: #d6a84f;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.feature-box h4 {
+    margin-bottom: 12px;
+}
+
+.feature-box p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+/* COMPARISON */
+
+.comparison {
+    padding: 80px 7%;
+    text-align: center;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 35px;
+    min-width: 650px;
+}
+
+th, td {
+    padding: 18px;
+    border: 1px solid #444;
+}
+
+th {
+    background: #d6a84f;
+    color: #111;
+}
+
+td {
+    background: #181818;
+}
+
+tr:hover td {
+    background: #292929;
+}
+
+.note {
+    color: #aaa;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/* TEST DRIVE */
+
+.testdrive {
+    padding: 80px 20px;
+    background: #151515;
+    text-align: center;
+}
+
+form {
+    max-width: 550px;
+    margin: 30px auto 0;
+    display: grid;
+    gap: 15px;
+}
+
+input, select {
+    padding: 16px;
+    background: #222;
+    border: 1px solid #444;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+}
+
+input:focus, select:focus {
+    outline: 1px solid #d6a84f;
+}
+
+form button {
+    padding: 16px;
+    background: #d6a84f;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background: #f0c56e;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 50px 20px 20px;
+    text-align: center;
+    background: #050505;
+}
+
+footer h2 {
+    color: #d6a84f;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #aaa;
+    margin: 10px 0;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .feature-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar ul {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .car-container {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero {
+        min-height: 480px;
+        padding: 50px 7%;
+    }
+
+    .about h2,
+    .cars-section h2,
+    .features h2,
+    .comparison h2,
+    .testdrive h2 {
+        font-size: 27px;
+    }
+
+    .navbar ul {
+        gap: 15px;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+}
